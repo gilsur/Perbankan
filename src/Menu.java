@@ -12,9 +12,15 @@ public class Menu extends javax.swing.JFrame {
     /**
      * Creates new form Menu
      */
-
+    Koding K = new Koding();
+    
     public Menu() {
         initComponents();
+        jTabung.setEnabled(false);
+        jTarik.setEnabled(false);
+        jInput.setEnabled(false);
+        jSaldoB.setEnabled(false);
+        jPIN1.setEnabled(false);
     }
 
     /**
@@ -222,6 +228,16 @@ public class Menu extends javax.swing.JFrame {
 
     private void jDaftarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jDaftarActionPerformed
         // TODO add your handling code here:
+        K.setPin(jPIN.getText());
+        K.setSaldo(Integer.parseInt(JSaldoA.getText()));
+        jSaldoB.setText(Integer.toString(K.getSaldo()));
+        jPIN.setEnabled(false);
+        JSaldoA.setEnabled(false);
+        JSaldoA.setText(JSaldoA.getText());
+        jTabung.setEnabled(true);
+        jInput.setEnabled(true);
+        jTarik.setEnabled(true);
+        jPIN1.setText(JSaldoA.getText());
     }//GEN-LAST:event_jDaftarActionPerformed
 
     private void jTabungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTabungActionPerformed
