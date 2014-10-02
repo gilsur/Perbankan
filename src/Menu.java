@@ -15,6 +15,11 @@ public class Menu extends javax.swing.JFrame {
 
     public Menu() {
         initComponents();
+        jTabung.setEnabled(false);
+        jTarik.setEnabled(false);
+        jInput.setEnabled(false);
+        jSaldoB.setEnabled(false);
+        jPIN1.setEnabled(false);
     }
 
     /**
