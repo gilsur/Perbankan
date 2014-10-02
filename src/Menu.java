@@ -242,6 +242,8 @@ public class Menu extends javax.swing.JFrame {
 
     private void jTabungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTabungActionPerformed
         // TODO add your handling code here:
+        K.Tabung(Integer.parseInt(jInput.getText()));
+        jSaldoB.setText(Integer.toString(K.getSaldo()));
     }//GEN-LAST:event_jTabungActionPerformed
 
     private void jInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jInputActionPerformed
@@ -254,6 +256,8 @@ public class Menu extends javax.swing.JFrame {
 
     private void jTarikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTarikActionPerformed
         // TODO add your handling code here:
+        K.Tarik(Integer.parseInt(jInput.getText()));
+        jSaldoB.setText(Integer.toString(K.getSaldo()));
     }//GEN-LAST:event_jTarikActionPerformed
 
     /**
