@@ -5,7 +5,7 @@
  */
 /**
  *
- * @author GILSUR
+ * @author ACER-PC
  */
 public class Menu extends javax.swing.JFrame {
 
